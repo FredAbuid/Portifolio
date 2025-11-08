@@ -12,7 +12,7 @@ O site foi desenvolvido com **HTML**, **CSS** e **JavaScript**, totalmente **res
 ---
 
 ## 🌎 Acesse meu portfólio
-👉 [Clique aqui para visitar o site]()
+👉 [Clique aqui para visitar o site](https://fredabuid.github.io/Portifolio/)
 
 ---
 
