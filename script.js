@@ -1,4 +1,8 @@
-function lightMode(){
-    var element = document.body ;
-    element.classList.toggle("light-mode");
+const btnLua = document.getElementById('btn-lua');
+if (btnLua) {
+  btnLua.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+  });
 }
+
+
