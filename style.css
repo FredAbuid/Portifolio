@@ -536,7 +536,6 @@ button[type="submit"]:hover {
     background-color: var(--bg, #fff);
     color: var(--text, #111);
     animation: fadeIn 0.3s ease;
-    margin-left: 36%;    
 }
 
   @keyframes fadeIn {
