@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,58 +8,58 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-  <!-- seu CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
   <header>
     <nav class="nav container" role="navigation" aria-label="Navegação principal">
       <a id="nome" href="index.html">Frederico Rocha</a>
 
-      <!-- Links do nav: não há menu mobile separado; os links se reorganizam via CSS -->
       <div class="nav-links" id="nav-links">
         <a href="#Sobre_mim">Sobre</a>
         <a href="#Projetos">Projetos</a>
         <a href="#Habilidades">Habilidades</a>
-        <a href="#Contato">Contato</a>
+        <a href="#contato">Contato</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section id="sec_principal" class="hero">
-      <!-- vídeo de fundo -->
+    <section id="sec_principal" class="hero" data-aos="fade-up">
       <video autoplay muted loop playsinline id="background-video" aria-hidden="true">
         <source src="31427-387059078_small.mp4" type="video/mp4">
         Seu navegador não suporta vídeo.
       </video>
-
-      <!-- overlay para contraste -->
       <div class="video-overlay" aria-hidden="true"></div>
-
       <div class="hero-content container">
         <div class="hero-text">
           <h1 id="ola">Olá, eu sou</h1>
           <h1 id="fred">Frederico Rocha</h1>
           <h2>Dev Full Stack</h2>
         </div>
-
-        <!-- ícone de alternar tema: NÃO altera o ícone visualmente, apenas alterna o tema -->
         <button class="icon-lua" id="btn-lua" aria-pressed="false" title="Alternar tema">
           <i class="fa-regular fa-moon" id="LUA" style="color: #ffffff;"></i>
         </button>
       </div>
     </section>
 
-    <section id="Sobre_mim">
+    <section id="Sobre_mim" data-aos="fade-up">
       <h1>Sobre mim</h1>
       <div class="espaço_verde"></div>
-      <p>Sou apaixonado por tecnologia e acredito que ela pode ser uma grande aliada na construção de um futuro mais sustentável. Gosto de explorar soluções inovadoras que unam inovação digital e preservação ambiental, buscando sempre formas de tornar os processos mais inteligentes e ao mesmo tempo mais respeitosos com a natureza. Tenho interesse em tudo que envolve o equilíbrio entre avanço tecnológico e cuidado com o meio ambiente, acreditando que é nesse ponto de encontro que podemos criar um impacto positivo duradouro.</p>
+      <p>Sou apaixonado por tecnologia e acredito que ela pode ser uma grande aliada na construção de um futuro mais
+        sustentável. Gosto de explorar soluções inovadoras que unam inovação digital e preservação ambiental, buscando
+        sempre formas de tornar os processos mais inteligentes e ao mesmo tempo mais respeitosos com a natureza. Tenho
+        interesse em tudo que envolve o equilíbrio entre avanço tecnológico e cuidado com o meio ambiente, acreditando
+        que é nesse ponto de encontro que podemos criar um impacto positivo duradouro.</p>
     </section>
 
-    <section id="Habilidades">
+    <section id="Habilidades" data-aos="fade-up">
       <h1>Habilidades</h1>
       <div class="espaço_verde"></div>
 
@@ -99,27 +100,96 @@
           <img src="image-removebg-preview (1).png" alt="Linux">
           <h2>LINUX</h2>
         </div>
+        <div class="habilidade">
+          <img src="PHP-logo.svg.png" alt="PHP">
+          <h2>PHP</h2>
+        </div>
       </div>
     </section>
     <section id="Projetos">
-        <h1>Projetos</h1>
-        <div class="espaço_verde"></div>
-        <div class="projeto_container">
-            <div class="projeto">
-                <h2>Projeto e-commerce</h2>
-                <p>Site feito apenas com html e css para expandir o conhecimento nas linguagens</p>
-                <p>HTML - CSS</p>
-                <a href="https://fredabuid.github.io/site_ecommerce/" id="ver_site"></a>
-                <a href="https://github.com/FredAbuid/site_ecommerce"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
-            </div>
+      <h1>Projetos</h1>
+      <div class="espaço_verde"></div>
+      <div class="projeto_container">
+        <div class="projeto">
+          <h2>Projeto e-commerce</h2>
+          <p>Site feito apenas com html e css para expandir o conhecimento nas linguagens</p>
+          <p>HTML - CSS</p>
+          <a href="https://fredabuid.github.io/site_ecommerce/" id="ver_site">Ver site</a>
+          <a href="https://github.com/FredAbuid/site_ecommerce"><i class="fa-brands fa-github"></i></a>
         </div>
+        <div class="projeto">
+          <h2>Projetos Futuros</h2>
+          <p>Lugar para adicionar futuros projetos</p>
+          <p>Em breve</p>
+          <a href="https://github.com/FredAbuid"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
     </section>
+   <section id="contato">
+  <h1>Entre em Contato</h1>
+  <div class="linha-verde"></div>
+
+  <button id="abrirModal" class="btn-contato" onclick="abrir_modal()">Fale comigo</button>
+  <dialog id="modal">
+  <form id="form-contato" method="POST" action="https://api.web3forms.com/submit">
+  <input type="hidden" name="access_key" value="YOUR">
+
+    <div class="campo">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+    </div>
+
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+    </div>
+
+    <div class="campo">
+      <label for="numero">Número</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" oninput="mascara_telefone()" required>
+    </div>
+
+    <div class="campo">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+    <button type="button" id="fecharModal" class="btn-fechar" onclick="fechar_modal()">Fechar</button>
+    </form>
+  </dialog>
+</section>
+
   </main>
 
-  <footer class="site-footer container">
-    <p>© <span id="ano"></span> Frederico Rocha</p>
-  </footer>
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h2>Contato</h2>
+      <p><i class="fa-solid fa-phone"></i> (31)9 9790-3868</p>
+      <p><i class="fa-solid fa-envelope"></i> frededabuid@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://github.com/FredAbuid" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/frederico-abuid-066820208" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Frederico Rocha. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1000, 
+    once: true     
+  });
+</script>
+
 </body>
 </html>

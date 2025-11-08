@@ -142,6 +142,8 @@ header {
     margin-bottom: .25rem;
 }
 
+
+
 #fred {
     font-family: "Quicksand", sans-serif;
     font-size: 20px;
@@ -181,8 +183,9 @@ h2 {
 }
 
 #Sobre_mim h1,
-#Habilidades h1 {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+#Habilidades h1,
+#Projetos h1 {
+    font-size: 40px;
     font-weight: 300;
     color: var(--color);
     margin-bottom: .5rem;
@@ -285,6 +288,7 @@ h2 {
     padding: 3rem 0;
     text-align: center;
     background: var(--bg-color);
+    height: 90vh;
 }
 
 .projeto{
@@ -297,3 +301,245 @@ h2 {
     background-color: var(--projeto-bg);
     box-shadow: 10px 7px 16px  var(--shadow-color);
 }
+
+.projeto i{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: var(--bg-color);
+}
+
+.projeto h2{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+#ver_site{
+    display: inline-block;
+    margin: 1rem auto 2rem auto;
+    padding: .5rem 1rem;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.projeto_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#contato {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 10vh;
+}
+
+#contato h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.linha-verde {
+  width: 15%;
+  height: 2px;
+  background-color: #248207;
+  margin-bottom: 30px;
+}
+
+#form-contato {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color);
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #58EA2C;
+  box-shadow: 0 0 8px #248207;
+}
+
+button[type="submit"] {
+  background-image: linear-gradient(to right, #58EA2C , #248207);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(88, 234, 44, 0.5);
+}
+
+  .btn-fechar {
+    background-color: #ccc;
+    color: #222;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .btn-fechar:hover {
+    background-color: #aaa;
+  }
+
+
+@media (max-width: 600px) {
+  #form-contato {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #contato h1 {
+    font-size: 32px;
+  }
+}
+
+#footer {
+  background-color: var(--bg-header-color);
+  color: var(--color);
+  font-family: "Inter", sans-serif;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #58EA2C;
+}
+
+.footer-info p {
+  font-size: 16px;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-info i {
+  color: #58EA2C;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-social a {
+  color: var(--color);
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #58EA2C;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.btn-contato {
+    background-color:   #1aff00;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .btn-contato:hover {
+    background-color: #005ed6;
+  }
+
+  /* Modal */
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    background-color: var(--bg, #fff);
+    color: var(--text, #111);
+    animation: fadeIn 0.3s ease;
+    margin-left: 36%;    
+}
+
+  @keyframes fadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
